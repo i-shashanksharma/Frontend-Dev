@@ -1,0 +1,43 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin: 0;
+}
+
+.title {
+    margin: 30px 0;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.lead {
+    background-color: #ffeaa7;
+    border: 2px solid #fdcb6e;
+}
+
+@media (max-width: 600px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
