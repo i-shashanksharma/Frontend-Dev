@@ -1,0 +1,22 @@
+input[type="text"] {
+  border: 2px solid #3498db;
+}
+
+a[href^="https"] {
+  color: green;
+}
+
+li:nth-child(odd) {
+  background: #f3f3f3;
+}
+li:hover {
+  color: crimson;
+}
+
+li::before {
+  content: "• ";
+  color: #555;
+}
+
+form > input { margin: 5px; } 
+a + a { margin-left: 10px; }

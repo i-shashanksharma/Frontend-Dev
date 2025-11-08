@@ -1,0 +1,27 @@
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+p::first-letter {
+  font-size: 2em;
+  color: #e67e22;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+mark {
+  background-color: yellow;
+  color: #000;
+}
+
+strong {
+  color: #c0392b;
+}
+
+em {
+  color: #2980b9;
+}

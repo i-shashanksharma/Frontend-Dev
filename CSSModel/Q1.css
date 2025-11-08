@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header, footer {
+  background-color: #f3f3f3;
+  padding: 1rem;
+}
+
+.border-demo {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.box {
+  padding: 20px;
+  width: 120px;
+  transition: border-color 0.4s ease;
+}
+
+.solid { border: 3px solid #333; }
+.dashed { border: 3px dashed #e67e22; }
+.double { border: 6px double #2980b9; }
+.groove { border: 6px groove #27ae60; }
+.rounded {
+  border: 3px solid #9b59b6;
+  border-radius: 15px;
+}
+
+/* Hover effect */
+.box:hover {
+  border-color: crimson;
+}
