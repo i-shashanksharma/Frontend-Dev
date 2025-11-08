@@ -1,0 +1,17 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+.card-container {
+  display: flex; gap: 1rem; padding: 1rem;
+}
+.card {
+  flex: 1; padding: 2rem; background: #ddd;
+  text-align: center; transition: background 0.3s;
+}
+
+@media (max-width: 900px) {
+  .card-container { flex-wrap: wrap; }
+  .card { flex: 1 1 calc(50% - 1rem); }
+}
+
+@media (max-width: 600px) {
+  .card { flex: 1 1 100%; }
+}
