@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  text-align: center;
+  padding: 30px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #007bff;
+  background: #eaf4ff;
+}
+
+.default-box { box-sizing: content-box; }
+.border-box { box-sizing: border-box; background: #ffe5e5; }
+
+.desc {
+  margin-top: 20px;
+  color: #555;
+}

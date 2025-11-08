@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #eef2f3;
+    padding: 50px;
+}
+
+.tooltip-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tooltip {
+    position: relative;
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tooltip-text {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+}

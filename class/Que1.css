@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.examples {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+button, input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hover-btn:hover {
+    background: #007bff;
+    color: white;
+}
+
+input:focus {
+    outline: 2px solid #28a745;
+}
+
+.active-btn:active {
+    background: #dc3545;
+    color: white;
+}
+
+.nth-list li:nth-child(even) {
+    background: #ddd;
+}
+.nth-list {
+    list-style: none;
+    padding: 0;
+}
+.nth-list li {
+    padding: 5px;
+}
