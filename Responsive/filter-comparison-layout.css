@@ -1,0 +1,15 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+.comparison {
+  display: flex; justify-content: center; gap: 1rem; padding: 1rem;
+}
+figure { text-align: center; }
+img {
+  width: 100%; max-width: 400px; border-radius: 8px;
+  transition: filter 0.5s;
+}
+.filtered { filter: brightness(60%); }
+.filtered:hover { filter: none; }
+
+@media (max-width: 700px) {
+  .comparison { flex-direction: column; align-items: center; }
+}
