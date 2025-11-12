@@ -1,0 +1,13 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+header {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.btn-light:hover {
+  background-color: #fff;
+  color: #0d6efd;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
