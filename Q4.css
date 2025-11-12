@@ -1,0 +1,18 @@
+body {
+  background-color: #fffef8;
+  font-family: 'Poppins', sans-serif;
+}
+h2, h4 {
+  color: #d35400;
+}
+.table th {
+  background-color: #f8f9fa;
+}
+.list-group-item {
+  border: none;
+  background-color: #fff3e0;
+}
+figure img {
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
