@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q3 - Interactive FAQ</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="q3.js"></script>
+  <style>
+    .question { padding:8px; cursor:pointer; border-bottom:1px solid #eee; }
+    .answer { display:none; padding:8px; background:#f9f9f9; }
+    .highlight { background: #eef; }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="faq" aria-label="FAQ">
+      <h2>Frequently Asked Questions</h2>
+      <div class="qa">
+        <div class="question">What is the course duration?</div>
+        <div class="answer"><input class="ans-input" placeholder="Type feedback..."> 6 weeks</div>
+      </div>
+      <div class="qa">
+        <div class="question">How do I get certificate?</div>
+        <div class="answer"><input class="ans-input" placeholder="Your email..."> Complete assignments</div>
+      </div>
+      <div class="qa">
+        <div class="question">Is there a refund policy?</div>
+        <div class="answer"><input class="ans-input" placeholder="Reason..."> 30 day refund</div>
+      </div>
+      <div class="qa">
+        <div class="question">Are mentors available?</div>
+        <div class="answer"><input class="ans-input" placeholder="Ask mentor..."> Mentor support</div>
+      </div>
+      <div class="qa">
+        <div class="question">How to access resources?</div>
+        <div class="answer"><input class="ans-input" placeholder="Resource name..."> Download page</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
