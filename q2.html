@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q2 - Product Highlight</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="q2.js"></script>
+  <style>
+    .product { padding:10px; margin:10px; border:1px solid #ccc; display:inline-block; width:160px; vertical-align:top; }
+    .highlight { background: #fffbcc; }
+    .selected { border: 2px solid #ff6; }
+    .discount { color: #d00; font-weight:bold; }
+    .out { opacity: 0.5; }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="products">
+      <article class="product" data-price="2500" data-stock="in" data-discount="10">
+        <h3 class="title">Laptop Pro</h3>
+        <p class="price">₹2500</p>
+        <p class="more">Specs: 8GB RAM</p>
+        <button class="fav">♡</button>
+      </article>
+
+      <article class="product" data-price="900" data-stock="out">
+        <h3 class="title">Mouse</h3>
+        <p class="price">₹900</p>
+        <p class="more">Specs: Wireless</p>
+        <button class="fav">♡</button>
+      </article>
+
+      <article class="product" data-price="1500" data-stock="in" data-discount="5">
+        <h3 class="title">Shoes</h3>
+        <p class="price">₹1500</p>
+        <p class="more">Size: 9</p>
+        <button class="fav">♡</button>
+      </article>
+
+      <article class="product" data-price="3000" data-stock="in">
+        <h3 class="title">Headphones</h3>
+        <p class="price">₹3000</p>
+        <p class="more">Noise cancelling</p>
+        <button class="fav">♡</button>
+      </article>
+
+      <article class="product" data-price="700" data-stock="out" data-discount="15">
+        <h3 class="title">Notebook</h3>
+        <p class="price">₹700</p>
+        <p class="more">200 pages</p>
+        <button class="fav">♡</button>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
