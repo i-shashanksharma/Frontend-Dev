@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q5 - Team Directory</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="q5.js"></script>
+  <style>
+    .manager { font-weight:bold; cursor:pointer; }
+    .employee { padding:6px; margin-left:20px; cursor:pointer;}
+    .highlight { background:#efe; }
+    .contact { display:none; color:#555; font-size:0.9em;}
+  </style>
+</head>
+<body>
+  <main>
+    <section id="team">
+      <h2>Company Teams</h2>
+
+      <div class="department" data-dept="engineering">
+        <div class="manager">Manager: Priya</div>
+        <div class="employee" data-email="ravi@co.com">Ravi <span class="contact">ravi@co.com</span></div>
+        <div class="employee" data-email="sumi@co.com">Sumi <span class="contact">sumi@co.com</span></div>
+        <div class="employee" data-email="kumar@co.com">Kumar <span class="contact">kumar@co.com</span></div>
+      </div>
+
+      <div class="department" data-dept="marketing">
+        <div class="manager">Manager: Tanya</div>
+        <div class="employee" data-email="ali@co.com">Ali <span class="contact">ali@co.com</span></div>
+        <div class="employee" data-email="meera@co.com">Meera <span class="contact">meera@co.com</span></div>
+      </div>
+
+      <div>
+        <button id="randomEmployeeBtn">Select Random Employee</button>
+        <button id="toggleTeamsBtn">Collapse/Expand Teams</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
