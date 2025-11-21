@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q6 - Event Subscription</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="q6.js"></script>
+  <style>
+    .topic { padding:6px; border:1px solid #ddd; margin:6px; display:inline-block; }
+    .subscribed { background:#dff0d8; }
+    .msg { margin-top:10px; color:green; display:none;}
+  </style>
+</head>
+<body>
+  <main>
+    <section id="subscriptions">
+      <h2>Subscription Topics</h2>
+      <div id="topicList">
+        <div class="topic" data-topic="news">News <button class="toggleSub">Subscribe</button></div>
+        <div class="topic" data-topic="updates">Product Updates <button class="toggleSub">Subscribe</button></div>
+        <div class="topic" data-topic="events">Events <button class="toggleSub">Subscribe</button></div>
+        <div class="topic" data-topic="offers">Offers <button class="toggleSub">Subscribe</button></div>
+        <div class="topic" data-topic="blogs">Blogs <button class="toggleSub">Subscribe</button></div>
+      </div>
+
+      <div>
+        <input id="newTopic" placeholder="New topic name" />
+        <button id="addTopicBtn">Add Topic</button>
+      </div>
+
+      <div id="messages" class="msg"></div>
+    </section>
+  </main>
+</body>
+</html>
