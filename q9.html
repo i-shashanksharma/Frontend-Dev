@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q9 - Multi jQuery Versions</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    var jQuery1 = jQuery.noConflict(true);
+    window.jQuery1 = jQuery1;
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    var jQuery3 = jQuery.noConflict(true);
+    window.jQuery3 = jQuery3;
+  </script>
+
+  <script src="q9.v1.js"></script>
+  <script src="q9.v2.js"></script>
+  <script src="q9.js"></script>
+
+  <style>
+    .widget { display:inline-block; width:120px; padding:8px; border:1px solid #ccc; margin:6px; text-align:center; }
+    .active { border-color:#2a9; box-shadow:0 0 6px rgba(42,153,34,0.2); }
+    .tooltip { display:none; position:absolute; background:#333; color:#fff; padding:4px; border-radius:3px; font-size:0.8em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h2>Dashboard Widgets</h2>
+    <div id="carouselWidgets" class="widget">Carousel 1</div>
+    <div id="modalTriggers" class="widget">Modal 1</div>
+    <div id="widgetsList">
+      <div class="widget" data-tooltip="I am widget A">Widget A</div>
+      <div class="widget" data-tooltip="I am widget B">Widget B</div>
+      <div class="widget" data-tooltip="I am widget C">Widget C</div>
+    </div>
+
+    <div id="modal" style="display:none; position:fixed; left:20%; top:30%; padding:20px; background:#fff; border:1px solid #ccc;">
+      <h3>Notification</h3>
+      <p id="modalText"></p>
+      <button id="closeModal">Close</button>
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+  </main>
+</body>
+</html>
