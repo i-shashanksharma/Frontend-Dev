@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Q10 - Registration Validation</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="q10.js"></script>
+  <style>
+    .invalid { border:2px solid red !important; }
+    .success { color:green; }
+    .errorMsg { color:red; display:block; }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="register">
+      <h2>Register</h2>
+      <form id="regForm" novalidate>
+        <label>Name: <input id="name" type="text" /></label><span class="errorMsg" id="nameErr"></span><br/>
+        <label>Email: <input id="email" type="email" /></label><span class="errorMsg" id="emailErr"></span><br/>
+        <label>Password: <input id="password" type="password" /></label><span class="errorMsg" id="passErr"></span><br/>
+        <button id="submitBtn" type="submit">Register</button>
+      </form>
+      <div id="result"></div>
+    </section>
+  </main>
+</body>
+</html>
