@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q4 - Theme Switcher</title>
+  <style>
+    body.theme-light {
+      background: #ffffff;
+      color: #000000;
+    }
+    body.theme-dark {
+      background: #222222;
+      color: #f0f0f0;
+    }
+    body.theme-blue {
+      background: #e3f2fd;
+      color: #0d47a1;
+    }
+    .btn-container {
+      margin: 20px;
+    }
+    .btn-container button {
+      margin-right: 10px;
+      padding: 5px 10px;
+    }
+    #currentThemeLabel {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body class="theme-light" data-theme="light">
+  <h2>Theme Switcher (Light / Dark / Blue)</h2>
+
+  <div class="btn-container">
+    <button data-theme-target="light">Light Theme</button>
+    <button data-theme-target="dark">Dark Theme</button>
+    <button data-theme-target="blue">Blue Theme</button>
+  </div>
+
+  <p id="currentThemeLabel">Current theme: light</p>
+
+  <script src="q4.js"></script>
+</body>
+</html>
