@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q3 - Multi Step Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .step {
+      display: none;
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
+    .step.active {
+      display: block;
+    }
+    .buttons {
+      margin-top: 10px;
+    }
+    .buttons button {
+      margin-right: 5px;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+    }
+    #summary {
+      display: none;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Multi-Step Form</h2>
+
+  <form id="multiStepForm">
+    <div class="step active" data-step="1">
+      <label>
+        Name:
+        <input type="text" id="stepName">
+      </label>
+      <div id="nameError" class="error"></div>
+    </div>
+
+    <div class="step" data-step="2">
+      <label>
+        Email:
+        <input type="email" id="stepEmail">
+      </label>
+      <div id="emailError" class="error"></div>
+    </div>
+
+    <div class="step" data-step="3">
+      <label>
+        Password:
+        <input type="password" id="stepPassword">
+      </label>
+      <div id="passwordError" class="error"></div>
+    </div>
+
+    <div class="buttons">
+      <button type="button" id="backBtn">Back</button>
+      <button type="button" id="nextBtn">Next</button>
+    </div>
+  </form>
+
+  <div id="summary">
+    <h3>Summary</h3>
+    <p><strong>Name:</strong> <span id="summaryName"></span></p>
+    <p><strong>Email:</strong> <span id="summaryEmail"></span></p>
+    <p><strong>Password:</strong> <span id="summaryPassword"></span></p>
+  </div>
+
+  <script src="q3.js"></script>
+</body>
+</html>
