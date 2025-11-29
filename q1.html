@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q1 Live Search</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    #results { margin-top: 10px; }
+    .product { display: flex; align-items: center; border: 1px solid #ccc; padding: 8px; margin-bottom: 5px; }
+    .product img { width: 60px; height: 60px; margin-right: 10px; }
+    #loading { display: none; }
+  </style>
+</head>
+<body>
+  <h2>Product Live Search</h2>
+  <input id="searchBox" placeholder="Search products">
+  <span id="loading">Loading...</span>
+  <div id="results"></div>
+  <script src="q1.js"></script>
+</body>
+</html>
