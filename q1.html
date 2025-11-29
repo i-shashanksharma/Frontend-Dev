@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q1 - Product List Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #productForm {
+      margin-bottom: 15px;
+    }
+    #productForm input {
+      padding: 5px 8px;
+      width: 200px;
+    }
+    #productForm button {
+      padding: 5px 10px;
+      margin-left: 5px;
+    }
+    #productList {
+      list-style: none;
+      padding: 0;
+      max-width: 400px;
+    }
+    #productList li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+    }
+    .actions button {
+      margin-left: 5px;
+    }
+    .edit-input {
+      flex: 1;
+      margin-right: 10px;
+      padding: 4px 6px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Dynamic Product List Manager</h2>
+
+  <div id="productForm">
+    <input type="text" id="productInput" placeholder="Enter product name">
+    <button id="addProductBtn">Add Product</button>
+  </div>
+
+  <ul id="productList"></ul>
+
+  <script src="q1.js"></script>
+</body>
+</html>
