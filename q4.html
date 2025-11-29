@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q4 Dashboard</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .card { border: 1px solid #ccc; padding: 10px; width: 200px; margin-bottom: 8px; }
+    .skeleton { background: #eee; height: 20px; width: 80px; }
+    #warning { color: red; margin-top: 10px; display: none; }
+  </style>
+</head>
+<body>
+  <h2>Multi-API Dashboard</h2>
+  <div class="card">Total Users: <span id="usersCount"><span class="skeleton"></span></span></div>
+  <div class="card">Total Orders: <span id="ordersCount"><span class="skeleton"></span></span></div>
+  <div class="card">Total Products: <span id="productsCount"><span class="skeleton"></span></span></div>
+  <div id="warning">Some data could not be loaded.</div>
+  <script src="q4.js"></script>
+</body>
+</html>
